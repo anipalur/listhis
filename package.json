@@ -1,0 +1,36 @@
+{
+  "name": "listhis",
+  "version": "1.0.0",
+  "description": "A fast, dynamic and private checklist to record patient history.",
+  "scripts": {
+    "is-linted:js": "npx eslint \"./src/**/*.js\" && echo Successfully checked all .js files!",
+    "is-linted:md": "npx markdownlint \"**/*.md\" --ignore node_modules && echo Successfully checked all .md files!",
+    "lint:js": "npx eslint --fix \"./src/**/*.js\" && echo Successfully linted all .js files!",
+    "lint:md": "npx markdownlint --fix \"**/*.md\" --ignore node_modules && echo Successfully linted all .md files!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anipalur/listhis.git"
+  },
+  "keywords": [
+    "website",
+    "history-taking",
+    "medicine",
+    "static-site"
+  ],
+  "author": {
+    "name": "anipalur",
+    "email": "ani@anipalur.com",
+    "url": "https://github.com/anipalur"
+  },
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/anipalur/listhis/issues"
+  },
+  "homepage": "https://github.com/anipalur/listhis#readme",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "markdownlint": "^0.37.4",
+    "markdownlint-cli": "^0.45.0"
+  }
+}
