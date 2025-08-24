@@ -1,0 +1,36 @@
+{
+  "editor.detectIndentation": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
+
+  "explorer.excludeGitIgnore": true,
+
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.readonlyInclude": {
+    "LICENSE": true,
+    "node_modules/**": true,
+    "package-lock.json": true
+  },
+
+  "search.exclude": {
+    "LICENSE": true,
+    "node_modules/**": true,
+    "package-lock.json": true
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.insertSpaces": true
+  },
+
+  "[json][yaml]": {
+    "editor.insertSpaces": true,
+  },
+
+  "[markdown]": {
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "off"
+  }
+}
