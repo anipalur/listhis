@@ -1,0 +1,237 @@
+#checklist {
+  margin-bottom: 1em;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header.clickable {
+  cursor: pointer;
+}
+
+.toggle-section-icon {
+  border: 1px solid var(--border);
+}
+
+.toggle-section-icon svg {
+  margin: auto;
+}
+
+.toggle-section-icon svg path {
+  fill: var(--muted);
+}
+
+.toggle-section-icon:hover, .toggle-section-icon:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.toggle-section-icon:hover svg path, .toggle-section-icon:focus svg path {
+  fill: var(--accent);
+}
+
+.section-header h2 {
+  color: var(--accent);
+  font-size: 1.25em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.question {
+  margin-top: 1em;
+}
+
+.followup-question:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+label {
+  color: var(--text);
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  gap: 0.25em;
+  display: flex;
+}
+
+label svg {
+  stroke: var(--accent);
+}
+
+input, textarea {
+  background: transparent;
+  color: var(--text);
+  width: 100%;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 0.5em;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 2.5em;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.yesno {
+  display: flex;
+  gap: 0.5em;
+}
+
+.yesno button {
+  background: transparent;
+  color: var(--muted);
+  font-size: 1em;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 0.5em;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.yesno button:hover, .yesno button:focus {
+  outline: none;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.yesno button.active {
+  background: var(--accent);
+  color: var(--card);
+  border-color: var(--accent);
+}
+
+.list-entry {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.list-entry input {
+  flex: 1;
+}
+
+.followups {
+  padding: 0.5em 0 0.5em 0.75em;
+  margin-top: 0.5em;
+  border-left: 2px solid var(--accent);
+}
+
+.multi-icon {
+  margin: 0.25em 0;
+  border: 1px solid var(--border);
+}
+
+.add-icon {
+  margin: 0.25em 0 0 0;
+}
+
+.multi-icon svg {
+  stroke: var(--muted);
+}
+
+.multi-icon:hover, .multi-icon:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.multi-icon:hover svg, .multi-icon:focus svg {
+  stroke: var(--accent);
+}
+
+.suggestion-label {
+  color: var(--accent);
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  display: flex;
+  gap: 0.25em;
+}
+
+.suggestion-label:not(:first-child) {
+  margin-top: 1.5em;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.primary-button, .secondary-button {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 0.5em;
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 8px 0 var(--card), 0 2px 20px 0 var(--card);
+}
+
+.primary-button p, .secondary-button p {
+  margin: 0;
+}
+
+.primary-button {
+  background: var(--accent);
+  color: var(--card);
+}
+
+.primary-button svg {
+  stroke: var(--card);
+}
+
+.primary-button:hover, .primary-button:focus {
+  outline: none;
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.primary-button:hover svg, .primary-button:focus svg {
+  stroke: var(--text);
+}
+
+.secondary-button {
+  background: var(--card);
+  color: var(--muted);
+}
+
+.secondary-button svg {
+  stroke: var(--muted);
+}
+
+.secondary-button:hover, .secondary-button:focus {
+  outline: none;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.secondary-button:hover svg, .secondary-button:focus svg {
+  stroke: var(--accent);
+}
+
+aside {
+  margin-left: 1em;
+}
+
+aside h2 {
+  padding: 0.31em 0;
+}
+
+@media (max-width: 1100px) {
+  .layout-app {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    order: -1;
+    margin-left: 0;
+  }
+}
